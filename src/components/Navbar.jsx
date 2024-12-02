@@ -45,7 +45,7 @@ const Navbar = () => {
     </div>
   
     {/* Mobile Menu */}
-    <div className={nav ? 'fixed h-[400px] left-0 top-0 w-[40%] bg-[#202121] eas-in-out duration-500 z-50' : 'fixed left-[-100%]'}>
+    <div className={nav ? 'fixed h-[400px] left-0 top-0 w-[50%] bg-[#202121] eas-in-out duration-500 z-50' : 'fixed left-[-100%]'}>
       <h1 className='text-3xl m-4 primary-color'>Yared.TS</h1>
       <ul className='p-8 text-2xl '>
         <li className='p-4 hover:text-orange-400'>
