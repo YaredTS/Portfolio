@@ -30,7 +30,7 @@ const Navbar = () => {
 
 
   return (
-    <div className=' text-gray-400 h-[70px] w-full max-w-[1200px] mx-auto flex justify-between items-center left-0 right-0 px-4'>
+    <div className=' fixed bg-black/70 text-gray-400 h-[70px] w-full max-w-[1200px] mx-auto flex justify-between items-center left-0 right-0 px-4'>
     <h1 className='text-3xl font-bold ml-4 primary-color'>Yared.TS</h1>
     {/* Desktop Menu */}
     <ul className='hidden md:flex mr-8'>

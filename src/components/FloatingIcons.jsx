@@ -14,9 +14,9 @@ const FloatingIcons = () => {
   };
 
   return (
-    <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
-      <Particaves
- absolute       id="tsparticles" 
+    <div style={{ position: 'absolute', height: '10vh', width: '100%' }}>
+      <Particles
+        id="tsparticles"
         init={particlesInit}
         options={{
           fullScreen: { enable: true }, // Keeps particles within the div

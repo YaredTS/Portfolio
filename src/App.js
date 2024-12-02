@@ -6,6 +6,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import FloatingIcons from './components/FloatingIcons'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Projects/>
       <Contact/>
       <Footer/>
+      <FloatingIcons/>
     </div>
   )
 }
