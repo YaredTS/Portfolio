@@ -3,14 +3,14 @@ import yared from '../assets/yared.png'
 
 const Home = () => {
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-3 sm:gap-20 md:gap-20 lg:gap-40 max-w-[1200px] h-[80vh] mx-auto py-8  pt-[10vh]' id='home'>
+    <div className='grid grid-cols-1 sm:grid-cols-3 gap-16 max-w-[1200px] md:h-[70vh] mx-auto py-[100px]' id='home'>
 
-        <div className='col-span-1 my-auto mx-auto w-[300px] sm:w-[250px] md:w-[300px] h-auto lg:w-[400px]'>
+        <div className='col-span-1 my-auto mx-auto w-[250px] sm:w-[250px] md:w-[250px] h-auto lg:w-[300px]'>
                 <img src={yared} alt="MySelf"/>
         </div>
 
         <div className='col-span-2 px-5 my-auto'>
-            <h1 className='text-white text-1xl sm:text-2xl lg:text-5xl font-extrabold'>
+            <h1 className='text-white text-1xl sm:text-2xl lg:text-3xl font-extrabold'>
                 <span className='primary-color'>
                     I'm a
                 </span> <br />
@@ -18,7 +18,7 @@ const Home = () => {
                 UI/UX Designer
             </h1>
 
-            <p className=' text-white sm:text-lg my-6 lg:text-xl font-weight:700'>
+            <p className=' text-white sm:text-lg my-6 lg:text-xl'>
             Hi, my name is Yared Tesfaye.
             I’m thrilled to share my web development journey with you! <br />Explore my work, skills, and the projects that reflect my passion for creating intuitive and responsive web applications.
             </p>
