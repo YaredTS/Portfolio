@@ -15,7 +15,7 @@ const Projects = () => {
 
       <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
         
-        <div className='transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto  h-[200px] bg-cover relative'>
+        <div className='transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto  h-[200px] bg-cover '>
           <img src={proj1} layout="fill" objectFit="cover" alt="" />
            <div className='opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center'>
           <span className='text-2xl font-bold text-white tracking-wider'>

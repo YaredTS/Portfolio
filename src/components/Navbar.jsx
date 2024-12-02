@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 
 const Navbar = () => {
@@ -9,28 +9,26 @@ const Navbar = () => {
         setNav(!nav);
     }
 
-//     const handleLinkClick = () => {
-//         setNav(false)
-//     };
+    const handleLinkClick = () => {
+    setNav(false)
+    };
 
+//     Close the menu when resizing to a larger screen
+  useEffect(() => {
+    const handleResize = () => {
+     if (window.innerWidth >= 768) {
+       setNav(false); // Close the menu for larger screens
+    }
+   };
 
-//       Close the menu when resizing to a larger screen
-//   useEffect(() => {
-//     const handleResize = () => {
-//       if (window.innerWidth >= 768) {
-//         setNav(false); // Close the menu for larger screens
-//       }
-//     };
-
-//     window.addEventListener('resize', handleResize);
-//     return () => {
-//       window.removeEventListener('resize', handleResize);
-//     };
-//   }, []);
+   window.addEventListener('resize', handleResize);   return () => {
+     window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
 
   return (
-    <div className=' fixed bg-black/70 text-gray-400 h-[70px] w-full max-w-[1200px] mx-auto flex justify-between items-center left-0 right-0 px-4'>
+    <div className=' fixed bg-black/70 text-gray-400 h-[70px] w-full max-w-[1200px] mx-auto flex justify-between items-center left-0 right-0 px-4 z-50'>
     <h1 className='text-3xl font-bold ml-4 primary-color'>Yared.TS</h1>
     {/* Desktop Menu */}
     <ul className='hidden md:flex mr-8'>
@@ -45,19 +43,19 @@ const Navbar = () => {
     </div>
   
     {/* Mobile Menu */}
-    <div className={nav ? 'fixed h-[400px] left-0 top-0 w-[50%] bg-[#202121] eas-in-out duration-500 z-50' : 'fixed left-[-100%]'}>
+    <div className={nav ? 'fixed h-[400px] left-0 top-0 w-[50%] bg-[#202121] eas-in-out duration-500 ' : 'fixed left-[-100%]'}>
       <h1 className='text-3xl m-4 primary-color'>Yared.TS</h1>
       <ul className='p-8 text-2xl '>
-        <li className='p-4 hover:text-orange-400'>
+        <li className='p-4 hover:text-orange-400' onClick={handleLinkClick}>
           <a href="#home" >Home</a>
         </li>
-        <li className='p-4 hover:text-orange-400'>
+        <li className='p-4 hover:text-orange-400' onClick={handleLinkClick}>
           <a href="#about" >About</a>
         </li>
-        <li className='p-4 hover:text-orange-400'>
+        <li className='p-4 hover:text-orange-400' onClick={handleLinkClick}>
           <a href="#projects">Projects</a>
         </li>
-        <li className='p-4 hover:text-orange-400'>
+        <li className='p-4 hover:text-orange-400' onClick={handleLinkClick}>
           <a href="#contact" >Contact</a>
         </li>
       </ul>
